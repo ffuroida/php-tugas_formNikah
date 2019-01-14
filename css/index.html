@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fundraising Grader</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+<style>
+ul.pagination {
+display: inline-block;
+padding: 0;
+margin: 0;
+}
+ul.pagination li {display: inline;}
+ul.pagination li a {
+color: black;
+float: left;
+padding: 8px 16px;
+text-decoration: none;
+transition: background-color .3s;
+border: 1px solid #ddd;
+}
+ul.pagination li a.active {
+background-color: #5882FA;
+color: white;
+border: 1px solid #5882FA;
+}
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+div.center {text-align: center;}
+</style>
+<body>
+
+																																			
+
+
+
+<!-- Modal -info -->
+<div class="container">
+<div id="modal-3" class="modal" data-modal-effect="slide-top">
+  <div class="modal-content">
+    <h2 class="fs-title">Score Index</h2>
+    <h3 class="fs-subtitle">Getting the most out of your data</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis consectetur ligula. Morbi dapibus tellus a ipsum sollicitudin aliquet. Phasellus id est lacus. Pellentesque a elementum velit, a tempor nulla. Mauris mauris lectus, tincidunt et purus rhoncus, eleifend convallis turpis. Nunc ullamcorper bibendum diam, vitae tempus dolor hendrerit iaculis. Phasellus tellus elit, feugiat vel mi et, euismod varius augue. Nulla a porttitor sapien. Donec vestibulum ac nisl sed bibendum. Praesent neque ipsum, commodo eget venenatis vel, tempus sit amet ante. Curabitur vel odio eget urna dapibus imperdiet sit amet eget felis. Vestibulum eros velit, posuere a metus eget, aliquam euismod purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    <input type="button" name="next" class="next action-button modal-close" value="Got it!">
+  </div>
+</div>
+</div>
+
+
+  <div class="center">
+		<ul class="pagination">
+    <li><a href="#">«</a></li>
+		<li><a href="#home">1</a></li>
+		<li><a href="#calon_laki">2</a></li>
+		<li><a href="form_wafatistri.php">3</a></li>
+		<li><a href="ortu_calonlaki.php">4</a></li>
+		<li><a href="ortu_calonpr.php">5</a></li>
+		<li><a href="kelengkapan.php">6</a></li>
+		<li><a href="selesai.php">»</a></li>
+		</ul>
+
+
+<form class="steps" accept-charset="UTF-8" method="POST" action="save.php" id="form" enctype="multipart/form-data" novalidate="">
+  <div id="#calon_laki">
+  <!-- USER INFORMATION FIELD SET --> 
+  <fieldset>
+    <h2 class="fs-title">Data Calon Mempelai Laki - Laki</h2>
+    <h3 class="fs-subtitle">We just need some basic information to begin your scoring</h3>
+    <!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Nama *</label>
+
+          <input type="text" name="fnama" id="fnama" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Tempat, Tanggal Lahir *</label>
+
+          <input type="text" name="ttllaki" id="ttllaki" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Alamat *</label>
+
+          <input type="text" name="lalamat" id="lalamat" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Kewarganegaraan  *</label>
+		  <select name="asal_negara" id="asal_negara" class="wrap-input100 validate-input">
+					 <option value="Indonesia"> Indonesia</option>
+					 <option value="Asing">Asing</option>
+				 </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Pekerjaan *</label>
+
+          <input type="text" name="pkrlaki" id="pkrlaki" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Agama *</label>
+
+          <select name="agamalaki" id="agamalaki" class="wrap-input100 validate-input">
+					 <option value="Islam">Islam</option>
+					 <option value="Katolik">Katolik</option>
+					 <option value="Protestan" selected>Protestan</option>
+					 <option value="Hindu" selected>Hindu</option>
+					 <option value="Budha" selected>Budha</option>
+					 <option value="Konghucu" selected>Konghucu</option>
+				</select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label>Tempat Tinggal *</label>
+
+          <input type="text" name="tinggallaki" id="tinggallaki" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label>Status Perkawinan *</label>
+
+          <select name="statuslaki" id="statuslaki" class="wrap-input100 validate-input">
+					 <option value="pejaka">Pejaka</option>
+					 <option value="duda">Duda</option>
+					 <option value="beristri" selected>Ber-Istri</option>
+				</select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label>Isikan Jumlah Istri jika Ber-Istri </label>
+
+          <input type="number" name="jmlistri" id="jmlistri" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+      
+      
+</fieldset>
+      </div>
+      
+        <div id="#home">
+  <!-- USER INFORMATION FIELD SET --> 
+  <fieldset>
+    <h2 class="fs-title">Data Calon Mempelai Perempuan</h2>
+    <h3 class="fs-subtitle">We just need some basic information to begin your scoring</h3>
+    <!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Nama *</label>
+
+          <input type="text" name="fnama" id="fnama" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Tempat, Tanggal Lahir *</label>
+
+          <input type="text" name="ttllaki" id="ttllaki" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Alamat *</label>
+
+          <input type="text" name="lalamat" id="lalamat" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Kewarganegaraan  *</label>
+		  <select name="asal_negara" id="asal_negara" class="wrap-input100 validate-input">
+					 <option value="Indonesia"> Indonesia</option>
+					 <option value="Asing">Asing</option>
+				 </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Pekerjaan *</label>
+
+          <input type="text" name="pkrlaki" id="pkrlaki" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label> Agama *</label>
+
+          <select name="agamalaki" id="agamalaki" class="wrap-input100 validate-input">
+					 <option value="Islam">Islam</option>
+					 <option value="Katolik">Katolik</option>
+					 <option value="Protestan" selected>Protestan</option>
+					 <option value="Hindu" selected>Hindu</option>
+					 <option value="Budha" selected>Budha</option>
+					 <option value="Konghucu" selected>Konghucu</option>
+				</select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label>Tempat Tinggal *</label>
+
+          <input type="text" name="tinggallaki" id="tinggallaki" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label>Status Perkawinan *</label>
+
+          <select name="statuslaki" id="statuslaki" class="wrap-input100 validate-input">
+					 <option value="pejaka">Pejaka</option>
+					 <option value="duda">Duda</option>
+					 <option value="beristri" selected>Ber-Istri</option>
+				</select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+	
+	<!-- Begin What's Your First Name Field -->
+        <div class="hs_firstname field hs-form-field">
+        
+          <label>Isikan Jumlah Istri jika Ber-Istri </label>
+
+          <input type="number" name="jmlistri" id="jmlistri" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+    <!-- End What's Your First Name Field -->
+      
+      <div>
+
+    <input id="submit" class="hs-button primary large action-button next" type="submit" value="Submit">
+    </div>
+</fieldset>
+      
+    
+    </form>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

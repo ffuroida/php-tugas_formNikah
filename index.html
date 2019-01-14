@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fundraising Grader</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="info">
+  <h1>Fundraising Grader</h1>
+  <span>
+    Made with
+    <i class="fa fa-beer"></i>
+    by
+    <a href="http://www.idesignradthings.com">Ty Stelmach</a>
+    <div class="spoilers">
+      An app created to score your nonprofit's fundraising technique.</a> 
+    </div>
+  </span>
+</div>
+
+
+
+<!-- Modal -info -->
+<div class="container">
+<div id="modal-3" class="modal" data-modal-effect="slide-top">
+  <div class="modal-content">
+    <h2 class="fs-title">Score Index</h2>
+    <h3 class="fs-subtitle">Getting the most out of your data</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis consectetur ligula. Morbi dapibus tellus a ipsum sollicitudin aliquet. Phasellus id est lacus. Pellentesque a elementum velit, a tempor nulla. Mauris mauris lectus, tincidunt et purus rhoncus, eleifend convallis turpis. Nunc ullamcorper bibendum diam, vitae tempus dolor hendrerit iaculis. Phasellus tellus elit, feugiat vel mi et, euismod varius augue. Nulla a porttitor sapien. Donec vestibulum ac nisl sed bibendum. Praesent neque ipsum, commodo eget venenatis vel, tempus sit amet ante. Curabitur vel odio eget urna dapibus imperdiet sit amet eget felis. Vestibulum eros velit, posuere a metus eget, aliquam euismod purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    <input type="button" name="next" class="next action-button modal-close" value="Got it!">
+  </div>
+</div>
+</div>
+
+<form class="steps" action="save.php" method="post" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="">
+<!--
+  <ul id="progressbar">
+    <li class="active">User Information</li>
+    <li>Aquisition</li>
+    <li>Cultivation</li>
+    <li>Cultivation2</li>
+    <li>Retention</li>
+  </ul>
+-->
+
+
+
+  <!-- RETENTION FIELD SET -->  
+  <fieldset>
+    <h2 class="fs-title">Data Calon Mempelai Laki - Laki</h2>
+    <h3 class="fs-subtitle">Isikan Data dengan Benar</h3>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama  *</label>
+          <input type="text" name="fnama" id="fnama" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+      
+         <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Tempat, Tanggal Lahir  *</label>
+          <input type="text" name="ttllaki" id="ttllaki" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Bin  *</label>
+          <input type="text" name="binlaki" id="binlaki" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>  
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Alamat  *</label>
+          <input type="text" name="lalamat" id="lalamat" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kewarganegaraan  *</label>
+          <select class="form-control" name="asal_negara" id="asal_negara">
+				<option value="Indonesia">Indonesia</option>
+				<option value="Asing">Asing</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Agama  *</label>
+          <select class="form-control" name="agamalaki" id="agamalaki">
+				<option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+				<option value="Protestan">Protestan</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Konghuchu">Konghuchu</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Pekerjaan  *</label>
+          <input type="text" name="pkrlaki" id="pkrlaki" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Status  *</label>
+          <select class="form-control" name="statuslaki" id="statuslaki">
+				<option value="Jejaka">Jejaka</option>
+				<option value="Duda">Duda</option>
+                <option value="Beristri">Beristri</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Jumlah Istri *isikan jika anda beristri* </label>
+          <input type="text" name="jmlistri" id="jmlistri" size="60" maxlength="128"  value="" placeholder="" >
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama Istri Terdahulu *isikan jika anda Duda* </label>
+          <input type="text" name="mantan_istri" id="mantan_istri"  size="60" maxlength="128"  value="" placeholder="">
+        </div>
+      
+        <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+        <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3"><i class="question-log fa fa-question-circle"></i> What Is This?</div>
+</fieldset>
+    
+<!--    data calon mempelai perempuan -->
+      <fieldset>
+    <h2 class="fs-title">Data Calon Mempelai Perempuan</h2>
+    <h3 class="fs-subtitle">Isikan Data dengan Benar</h3>
+        <!-- Begin Total Number of Donors Who Gave in Year 1 Field -->
+          <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama  *</label>
+
+          <input type="text" name="fnamapr" id="fnamapr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Tempat, Tanggal Lahir  *</label>
+          <input type="text" name="tempat_ttlpr" id="tempat_ttlpr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Bin  *</label>
+          <input type="text" name="binpr" id="binpr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>  
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Alamat  *</label>
+          <input type="text" name="lalamatpr" id="lalamatpr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kewarganegaraan  *</label>
+          <select class="form-control" name="asal_negarapr" id="asal_negarapr">
+				<option value="Indonesia">Indonesia</option>
+				<option value="Asing">Asing</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Agama  *</label>
+          <select class="form-control" name="agamapr" id="agamapr">
+				<option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+				<option value="Protestan">Protestan</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Konghuchu">Konghuchu</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Pekerjaan  *</label>
+          <input type="text" name="pkrpr" id="pkrpr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Status  *</label>
+          <select class="form-control" name="statuspr" id="statuspr">
+				<option value="Perawan">Perawan</option>
+				<option value="Janda">Janda</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama Suami Terdahulu *isikan jika anda Janda* </label>
+          <input type="text" name="mantan_suami" id="mantan_suami"  size="60" maxlength="128"  value="" placeholder="">
+        </div>
+        <!-- End Total Number of Donors Who Gave in Year 1 Field-->
+        <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+        <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3"><i class="question-log fa fa-question-circle"></i> What Is This?</div>
+  </fieldset>
+    
+    <!--    data Orang Tua Laki - Laki calon mempelai Laki - Laki -->
+    <fieldset>
+    <h2 class="fs-title">Data Orang Tua Laki - Laki</h2>
+    <h2 class="fs-title">Calon Mempelai Laki - Laki</h2>
+    <h3 class="fs-subtitle">Isikan Data dengan Benar</h3>
+        <!-- Begin Total Number of Donors Who Gave in Year 1 Field -->
+          <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama  *</label>
+
+          <input type="text" name="ortulaki" id="ortulaki" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+        <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Tempat, Tanggal Lahir  *</label>
+
+          <input type="text" name="tempat_ttlortulaki" id="tempat_ttlortulaki" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Alamat  *</label>
+          <input type="text" name="ortulalamatlaki" id="ortulalamatlaki" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kewarganegaraan  *</label>
+          <select class="form-control" name="asal_negaraortulaki" id="asal_negaraortulaki">
+				<option value="Indonesia">Indonesia</option>
+				<option value="Asing">Asing</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Agama  *</label>
+          <select class="form-control" name="agamaortulaki" id="agamaortulaki">
+				<option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+				<option value="Protestan">Protestan</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Konghuchu">Konghuchu</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Pekerjaan  *</label>
+          <input type="text" name="pkrortulaki" id="pkrortulaki" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <!-- End Total Number of Donors Who Gave in Year 1 Field-->
+        <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+        <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3"><i class="question-log fa fa-question-circle"></i> What Is This?</div>
+  </fieldset>
+    
+    <!--    data Orang Tua Perempuan calon mempelai Laki -->
+    <fieldset>
+    <h2 class="fs-title">Data Orang Tua Perempuan 
+        Calon Mempelai Laki - Laki</h2>
+    <h3 class="fs-subtitle">Isikan Data dengan Benar</h3>
+        <!-- Begin Total Number of Donors Who Gave in Year 1 Field -->
+          <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama  *</label>
+
+          <input type="text" name="ortupr" id="ortupr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+        
+        <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Tempat, Tanggal Lahir  *</label>
+
+          <input type="text" name="tempat_ttlortupr" id="tempat_ttlortupr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Alamat  *</label>
+          <input type="text" name="ortulalamatpr" id="ortulalamatpr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kewarganegaraan  *</label>
+          <select class="form-control" name="asal_negaraortupr" id="asal_negaraortupr">
+				<option value="Indonesia">Indonesia</option>
+				<option value="Asing">Asing</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Agama  *</label>
+          <select class="form-control" name="agamaortupr" id="agamaortupr">
+				<option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+				<option value="Protestan">Protestan</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Konghuchu">Konghuchu</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Pekerjaan  *</label>
+          <input type="text" name="pkrortupr" id="pkrortupr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <!-- End Total Number of Donors Who Gave in Year 1 Field-->
+        <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+        <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3"><i class="question-log fa fa-question-circle"></i> What Is This?</div>
+  </fieldset>
+
+    <!--    data Orang Tua Laki - Laki calon mempelai Perempuan -->
+    <fieldset>
+    <h2 class="fs-title">Data Orang Tua Laki - Laki </h2>
+        <h2 class="fs-title">   Calon Mempelai Perempuan</h2>
+    <h3 class="fs-subtitle">Isikan Data dengan Benar</h3>
+        <!-- Begin Total Number of Donors Who Gave in Year 1 Field -->
+          <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama  *</label>
+
+          <input type="text" name="ortulaki_pr" id="ortulaki_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Tempat, Tanggal Lahir  *</label>
+
+          <input type="text" name="tempat_ttlortulaki_pr" id="tempat_ttlortulaki_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+         <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Pekerjaan  *</label>
+
+          <input type="text" name="pkrortulaki_pr" id="pkrortulaki_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Alamat  *</label>
+          <input type="text" name="ortulalamatlaki_pr" id="ortulalamatlaki_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kewarganegaraan  *</label>
+          <select class="form-control" name="asal_negaraortulaki_pr" id="asal_negaraortulaki_pr">
+				<option value="Indonesia">Indonesia</option>
+				<option value="Asing">Asing</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Agama  *</label>
+          <select class="form-control" name="agamaortulaki_pr" id="agamaortulaki_pr">
+				<option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+				<option value="Protestan">Protestan</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Konghuchu">Konghuchu</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Pekerjaan  *</label>
+          <input type="text" name="pkrortulaki" id="pkrortulaki" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        
+        
+        <!-- End Total Number of Donors Who Gave in Year 1 Field-->
+        <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+        <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3"><i class="question-log fa fa-question-circle"></i> What Is This?</div>
+  </fieldset>
+    
+     <!--    data Orang Tua Perempuan calon mempelai Perempuan -->
+    <fieldset>
+    <h2 class="fs-title">Data Orang Tua Perempuan</h2>
+        <h2 class="fs-title">Calon Mempelai Perempuan</h2>
+    <h3 class="fs-subtitle">Isikan Data dengan Benar</h3>
+        <!-- Begin Total Number of Donors Who Gave in Year 1 Field -->
+          <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama  *</label>
+
+          <input type="text" name="ortupr_pr" id="ortupr_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+        <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Tempat, Tanggal Lahir  *</label>
+
+          <input type="text" name="tempat_ttlortupr_pr" id="tempat_ttlortupr_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+         <div> 
+        
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Pekerjaan  *</label>
+
+          <input type="text" name="pkrortupr_pr" id="pkrortupr_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Alamat  *</label>
+          <input type="text" name="ortulalamatpr_pr" id="ortulalamatpr_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kewarganegaraan  *</label>
+          <select class="form-control" name="asal_negaraortupr_pr" id="asal_negaraortupr_pr">
+				<option value="Indonesia">Indonesia</option>
+				<option value="Asing">Asing</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+      
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Agama  *</label>
+          <select class="form-control" name="agamaortupr_pr" id="agamaortupr_pr">
+				<option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+				<option value="Protestan">Protestan</option>
+				<option value="Buddha">Buddha</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Konghuchu">Konghuchu</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Pekerjaan  *</label>
+          <input type="text" name="pkrortupr_pr" id="pkrortupr_pr" required="required" size="60" maxlength="128"  value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+       
+        <!-- End Total Number of Donors Who Gave in Year 1 Field-->
+        <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
+        <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3"><i class="question-log fa fa-question-circle"></i> What Is This?</div>
+  </fieldset>
+    
+
+
+        <!-- Begin Total Number of Donors Who Gave in Year 1 and Year 2 Field -->
+<!--
+          <div class="form-item webform-component webform-component-textfield" id="webform-component-retention--amount-2 hs_number_of_year_1_donors_who_also_gave_in_year_2 field hs-form-field">
+        
+          <label for=" edit-submitted-retention-amount-2 number_of_year_1_donors_who_also_gave_in_year_2-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">What was your total number of donors who gave in year 1 that also gave in year 2? *</label>
+
+          <input id="edit-submitted-retention-amount-2" class="form-text hs-input" name="number_of_year_1_donors_who_also_gave_in_year_2" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+-->
+        <!-- End Total Number of Donors Who Gave in Year 1 and Year 2 Field -->
+
+        <!-- Begin Retention Rate Percent -->
+<!--
+          <div class="form-item webform-component webform-component-textfield" id="webform-component-retention--percent-change field hs-form-field">
+        
+          <label for="edit-submitted-retention-percent-change">Retention Rate</label>
+
+         <input id="edit-submitted-retention-percent-change" class="form-text hs-input" name="retention_rate_percent" readonly="readonly" size="60" maxlength="128" type="text" value="" placeholder="0">
+          
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+-->
+
+        <!-- End Retention Rate Percent -->
+
+
+        <!-- Begin Final Calc -->
+<!--
+          <div class="form-item webform-component webform-component-textfield hs_fundraising_400_index field hs-form-field" id="webform-component-final-grade--grade">
+
+          <label for=" fundraising_400_index-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Fundraising 400 Index Score</label>
+
+          <input id="edit-submitted-final-grade-grade" class="form-text hs-input" name="fundraising_400_index" readonly="readonly" size="60" maxlength="128" type="text" value="" placeholder="0">
+          </div>
+         End Final Calc 
+-->
+
+<fieldset>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Nama Calon Mempelai Laki*</label>
+
+          <input type="text" name="fnama" id="fnama" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Calon Mempelai Wanita  *</label>
+
+          <input type="text" name="fnamapr" id="fnamapr" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Hari *</label>
+
+          <input type="text" name="hariini" id="hariini" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Tanggal *</label>
+
+          <input type="text" name="tanggal" id="tanggal" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Jam *</label>
+
+          <input type="text" name="jam" id="jam" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Maskawin *</label>
+
+          <input type="text" name="maskawin" id="maskawin" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Dibayar  *</label>
+          <select class="form-control" name="dibayar" id="dibayar">
+				<option value="hutang">Hutang</option>
+				<option value="tunai">Tunai</option>
+          </select>
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Bertempat di *</label>
+
+          <input type="text" name="tmptnikah" id="tmptnikah" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Bertempat di *</label>
+
+          <input type="text" name="tmptnikah" id="tmptnikah" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kecamatan *</label>
+
+          <input type="text" name="kecamatan" id="kecamatan" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kelurahan *</label>
+
+          <input type="text" name="kelurahan" id="kelurahan" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+          <div> 
+          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Kabupaten / Kota *</label>
+
+          <input type="text" name="kabupaten" id="kabupaten" required="required" size="60" maxlength="128" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+          <span class="error1" style="display: none;">
+              <i class="error-log fa fa-exclamation-triangle"></i>
+          </span>
+          </div>
+<!--    <input type="button" data-page="5" name="previous" class="previous action-button" value="Previous" />-->
+    <input id="submit" class="hs-button primary large action-button next" type="submit" value="Submit">
+    <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3">What Is This?</div>
+</fieldset>
+    </form>
+<!--
+  <fieldset>
+    <h2 class="fs-title">It's on the way!</h2>
+    <h3 class="fs-subtitle">Thank you for trying out our marketing grader, please go check your email for your fundraising report card and some helpful tips to improve it!</h3>
+    <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3">What Is This?</div>
+  </fieldset>
+-->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src='https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+</html>
+
